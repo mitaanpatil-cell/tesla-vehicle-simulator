@@ -1,0 +1,8 @@
+{
+    "cSpell.words": [
+        "gurukul"
+    ],
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    }
+}
