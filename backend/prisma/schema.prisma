@@ -18,4 +18,5 @@ model Vehicle {
   locked       Boolean @default(true)
   batteryLevel Int     @default(80)
   charging     Boolean @default(false)
+  climateOn    Boolean @default(false)
 }
