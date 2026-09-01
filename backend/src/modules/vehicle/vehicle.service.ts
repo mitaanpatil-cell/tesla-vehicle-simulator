@@ -1,4 +1,4 @@
-import type { PrismaClient, Vehicle } from "../generated/prisma/client";
+import type { PrismaClient, Vehicle } from "../../generated/prisma/client";
 
 type VehicleClient = Pick<PrismaClient, "vehicle">;
 

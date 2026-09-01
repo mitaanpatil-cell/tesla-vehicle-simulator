@@ -1,5 +1,5 @@
 import { expect, test, vi } from "vitest";
-import { runVehicleSimulationTick } from "./vehicleSimulator";
+import { runVehicleSimulationTick } from "../../simulation/vehicle-simulator";
 
 const vehicle = {
   id: 1,

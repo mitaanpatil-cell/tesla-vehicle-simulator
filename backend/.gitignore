@@ -1,5 +1,12 @@
-node_modules
-# Keep environment variables out of version control
-.env
+node_modules/
+dist/
+coverage/
+playwright-report/
+test-results/
 
-/src/generated/prisma
+# Keep local credentials and generated Prisma client code out of version control.
+.env
+.env.*
+!.env.example
+.DS_Store
+src/generated/prisma/

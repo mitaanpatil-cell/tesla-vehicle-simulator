@@ -1,7 +1,7 @@
-import { prisma } from "./prisma";
+import { prisma } from "./database/prisma";
 import { createApp } from "./app";
-import { runVehicleSimulationTick } from "./simulation/vehicleSimulator";
-import { VehicleService } from "./services/VehicleService";
+import { VehicleService } from "./modules/vehicle/vehicle.service";
+import { runVehicleSimulationTick } from "./simulation/vehicle-simulator";
 
 const PORT = 3000;
 const vehicleService = new VehicleService(prisma);

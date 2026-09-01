@@ -1,5 +1,5 @@
 import { Router, type Request, type RequestHandler, type Response } from "express";
-import { type ServiceResult, VehicleService } from "../services/VehicleService";
+import { type ServiceResult, VehicleService } from "./vehicle.service";
 
 function sendResult<T>(res: Response, result: ServiceResult<T>) {
   if (!result.ok) {

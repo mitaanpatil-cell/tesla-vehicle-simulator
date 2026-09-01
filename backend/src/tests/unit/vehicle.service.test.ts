@@ -1,5 +1,5 @@
 import { expect, test, vi } from "vitest";
-import { VehicleService } from "./VehicleService";
+import { VehicleService } from "../../modules/vehicle/vehicle.service";
 
 const vehicle = {
   id: 1,

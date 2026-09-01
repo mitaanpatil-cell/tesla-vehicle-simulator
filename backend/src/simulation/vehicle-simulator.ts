@@ -1,15 +1,17 @@
-export async function runVehicleSimulationTick(prisma: any) {
+import type { PrismaClient } from "../generated/prisma/client";
+
+type VehicleClient = {
+  vehicle: Pick<PrismaClient["vehicle"], "findUnique" | "update">;
+};
+
+export async function runVehicleSimulationTick(prisma: VehicleClient) {
   const vehicle = await prisma.vehicle.findUnique({
     where: {
       id: 1,
     },
   });
 
-  if (!vehicle) {
-    return;
-  }
-
-  if (!vehicle.charging) {
+  if (!vehicle || !vehicle.charging) {
     return;
   }
 

@@ -1,7 +1,7 @@
 import cors from "cors";
 import express from "express";
-import { createVehicleRouter } from "./routes/vehicleRoutes";
-import { VehicleService } from "./services/VehicleService";
+import { createVehicleRouter } from "./modules/vehicle/vehicle.routes";
+import { VehicleService } from "./modules/vehicle/vehicle.service";
 
 type AppDependencies = {
   vehicleService: VehicleService;

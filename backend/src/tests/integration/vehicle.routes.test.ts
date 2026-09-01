@@ -1,6 +1,6 @@
 import request from "supertest";
 import { expect, test, vi } from "vitest";
-import { createApp } from "../app";
+import { createApp } from "../../app";
 
 const vehicle = {
   id: 1,
